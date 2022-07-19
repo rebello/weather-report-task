@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Weather App</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/weathericons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+  <div class="weather-body">
+    <header class="header">
+      <div class="header-title">
+        Select City
+      </div>
+      <div class="header-select">
+        <select id="citiesList" onChange="getSelectedItem(this)">
+        </select>
+      </div>
+    </header>
+    <div class="body-wrapper">
+      <div id="bodyLoader">
+      </div>
+      <div id="city-name">
+      </div>
+      <div class="weather-wrapper">
+        <div id="cityWeatherIcon"></div>
+        <div id="cityWeatherTemp">
+          
+        </div>
+      </div>
+      <div id="weatherForecast">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./load.js"></script>
+
+</html>
